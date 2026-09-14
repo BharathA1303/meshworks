@@ -52,7 +52,7 @@ export default function Contact() {
       }
     } catch {
       setStatus('error')
-      setErrorMsg('Network error. You can email directly at bharathdev2513@gmail.com')
+      setErrorMsg('Network error. You can email directly at devbharath2513@gmail.com')
     }
   }
 
@@ -253,7 +253,7 @@ export default function Contact() {
                   Email
                 </span>
                 <a
-                  href="mailto:bharathdev2513@gmail.com"
+                  href="mailto:devbharath2513@gmail.com"
                   style={{
                     fontFamily: 'var(--font-body)',
                     fontSize: '0.82rem',
@@ -268,7 +268,7 @@ export default function Contact() {
                   onMouseEnter={e => e.currentTarget.style.color = '#F5F4F0'}
                   onMouseLeave={e => e.currentTarget.style.color = '#888888'}
                 >
-                  bharathdev2513@gmail.com <span style={{ fontSize: '0.7rem', opacity: 0.6 }}>↗</span>
+                  devbharath2513@gmail.com <span style={{ fontSize: '0.7rem', opacity: 0.6 }}>↗</span>
                 </a>
               </div>
 

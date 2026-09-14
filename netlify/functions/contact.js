@@ -39,7 +39,7 @@ export async function handler(event) {
     const user = process.env.SMTP_USER || process.env.SMTP_FROM_EMAIL || 'ashok.j2346@gmail.com'
     const pass = process.env.SMTP_PASSWORD || process.env.SMTP_PASS
     const fromName = process.env.SMTP_FROM_NAME || 'MeshWorks'
-    const toEmail = process.env.CONTACT_TO || 'bharathdev2513@gmail.com'
+    const toEmail = process.env.CONTACT_TO || 'devbharath2513@gmail.com'
 
     if (!user || !pass) {
       console.error('SMTP error: user or pass environment variables are missing.')
