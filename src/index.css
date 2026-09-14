@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F5F4F0;
+  --fg: #111111;
+  --muted: #888888;
+  --border: #E0DFD9;
+  --card-bg: #EFEEEA;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* Selection */
+::selection {
+  background: #111111;
+  color: #F5F4F0;
+}
+
+/* Pill button base */
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #111111;
+  color: #F5F4F0;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-pill:hover {
+  transform: scale(0.97);
+  opacity: 0.88;
+}
+
+.btn-pill-outline {
+  background-color: transparent;
+  color: #111111;
+  border: 1.5px solid #111111;
+}
+
+.btn-pill-outline:hover {
+  background-color: #111111;
+  color: #F5F4F0;
+  transform: scale(0.97);
+}
+
+/* Section padding utility */
+.section-pad {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* Invisible initially for GSAP */
+.gsap-hidden {
+  opacity: 0;
+  transform: translateY(28px);
+}
