@@ -97,12 +97,17 @@ export async function handler(event) {
       `,
     }
 
-    await transporter.sendMail(mailOptions)
+    const info = await transporter.sendMail(mailOptions)
 
     return {
       statusCode: 200,
       headers,
-      body: JSON.stringify({ success: true, message: 'Message sent successfully.' }),
+      body: JSON.stringify({
+        success: true,
+        message: 'Message sent successfully.',
+        deliveredTo: toEmail,
+        accepted: info.accepted,
+      }),
     }
   } catch (err) {
     console.error('Nodemailer error:', err)
