@@ -9,7 +9,7 @@ const projects = [
     id: 'credx',
     number: '01',
     name: 'CredX',
-    year: '2024',
+    year: '2026',
     category: 'Security · Verification',
     tags: ['React', 'FastAPI', 'PostgreSQL'],
     description:
@@ -20,7 +20,7 @@ const projects = [
     id: 'stockpulse',
     number: '02',
     name: 'StockPulse India',
-    year: '2024',
+    year: '2026',
     category: 'Finance · Trading',
     tags: ['React', 'Python', 'FastAPI', 'SQLite'],
     description:
@@ -31,7 +31,7 @@ const projects = [
     id: 'hive',
     number: '03',
     name: 'Hive',
-    year: '2024',
+    year: '2026',
     category: 'Education · Real-time',
     tags: ['React', 'Flask', 'Socket.IO', 'Docker'],
     description:
@@ -42,7 +42,7 @@ const projects = [
     id: 'notesdock',
     number: '04',
     name: 'NotesDock',
-    year: '2023',
+    year: '2025',
     category: 'Cloud · PWA',
     tags: ['Flask', 'AWS EC2', 'AWS S3'],
     description:
@@ -53,7 +53,7 @@ const projects = [
     id: 'veribuy',
     number: '05',
     name: 'VeriBuy',
-    year: '2024',
+    year: '2025',
     category: 'AI · Consumer',
     tags: ['Flask', 'Gemini API', 'BeautifulSoup'],
     description:
